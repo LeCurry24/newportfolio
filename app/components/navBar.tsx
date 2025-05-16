@@ -1,4 +1,7 @@
+'use client'
+import Link from "next/link";
 import React from "react";
+
 
 const navBar = () => {
   return (
@@ -27,13 +30,13 @@ const navBar = () => {
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
           >
             <li>
-              <a>Projects</a>
+              <Link href="/projects"><button>Projects</button></Link>
             </li>
             <li>
-              <a>Resume</a>
+              <Link href="/resume"><button>Resume</button></Link>
             </li>
             <li>
-              <a>My Story</a>
+              <Link href="/mystory"><button>My Story</button></Link>
             </li>
           </ul>
         </div>
